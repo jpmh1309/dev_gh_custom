@@ -1,10 +1,8 @@
 const core = require('@actions/core');
-const github = require('@actions/github');
+// const github = require('@actions/github');
 const exec = require('@actions/exec');
 
 function run() {
-  core.notice('Hello from deploy-s3-javascript action!');
-  /*
   // 1) Get some input values
   const bucket = core.getInput('bucket', { required: true });
   const bucketRegion = core.getInput('bucket-region', { required: true });
@@ -16,7 +14,6 @@ function run() {
 
   const websiteUrl = `http://${bucket}.s3-website-${bucketRegion}.amazonaws.com`;
   core.setOutput('website-url', websiteUrl); // echo "website-url=..." >> $GITHUB_OUTPUT
-  */
 }
 
 run();
